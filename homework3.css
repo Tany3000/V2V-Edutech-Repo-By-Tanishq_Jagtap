@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(135deg ,#321619 , #030303);
+
+}
+
+.card{
+    font-family: cursive ;
+    background: linear-gradient(135deg ,#91f3f3 , #160647 );
+    border-radius: 10px;    
+    font-size: large;
+    width: 50%;
+    height: 50%;
+}
+body{
+    background-color: black;
+    color: beige ;
+}
+.middle{
+font-family: cursive;
+background: linear-gradient(135deg ,#3d18f6 ,#7318f6);
+border-radius: 20px;
+}
+.table{
+    font-family: cursive ;
+    background: linear-gradient(135deg ,#e00a0a , #160647 );
+    border-radius: 10px;    
+    font-size: large;
+    width: 15%;
+    height: 30%;
+
+}
+.hob{
+
+    font-family: cursive ;
+    background: linear-gradient(135deg ,#e7770d , #160647 );
+    border-radius: 10px;    
+    font-size: large;
+    width: 30%;
+    height: 50%;
+}
