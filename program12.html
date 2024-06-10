@@ -1,0 +1,50 @@
+<!--date 10 June 2024 topic : inline/internal/external CSS   
+Css precedence 
+    inline > internal >   external 
+  selectors
+    1] tag selector : this type of selector applies all the css properties in defineed in it to the specific tag in this case it is p  
+    2] class selector : this type of selector applies all the css properties in defineed in it to the specific class in this case is .card
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="program12.css">
+    <style>
+        p{
+            color: navy;
+            background: linear-gradient(135deg, aqua, rgb(204, 0, 255)); 
+            font-family: cursive;
+            font-size: larger;
+        }
+
+        .card{
+            font-family: cursive ;
+            background: linear-gradient(135deg ,#91f3f3 , #160647 );
+            border-radius: 10px;    
+            font-size: large;
+            width: 50%;
+            height: 50% ;
+            font-weight: 300;
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p>we are not lucky today</p>
+        <p>MSCB madat karo </p>
+        <p style="color: red; text-align: center;" >net band hoga hai</p>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html> 
+
+
+
+

@@ -1,0 +1,20 @@
+/* date 10 june topic external css*/
+p{
+    color: rebeccapurple;
+    text-align: center;
+    text-decoration: overline;
+}
+h6{
+color: rgb(211, 108, 12);
+text-align: right;
+}
+
+h1{
+
+    color: green;
+}
+u:hover{
+color: rgb(211, 108, 12);
+
+
+}

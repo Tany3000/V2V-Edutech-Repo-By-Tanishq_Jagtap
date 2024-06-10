@@ -1,0 +1,42 @@
+<!--date 10 june 2024 style tag: sudo selector , id selector
+
+3] id slector : this type of selector applies all the css properties in defineed in it to the specific id in this case #p1
+4] pseudo selector : this type of selector applies all the css properties in defineed in it when a certain action takes place this action can be hover click visited in this case h1:hover , a:visited  
+
+class vs id  
+
+class is used to make a common template and is used in multiple places 
+id is use to make a unique template that will be applied at only one place , it is also used to help with business logic 
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        h1:hover{
+            color: aqua;
+            background-color: black;
+        }
+        #p1{
+            color: orange;
+            background-color: pink;
+        }
+        a:visited{
+            color: red;
+           font-weight:600 ;
+
+        }
+    </style>
+
+</head>
+<body>
+    <p id="p1">hello </p>
+    <h1>hover over me </h1>
+    <a href="program12.html">click me </a>
+</body>
+</html>
