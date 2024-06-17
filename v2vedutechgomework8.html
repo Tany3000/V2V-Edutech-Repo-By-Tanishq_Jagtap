@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area and Interest Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script>
+        function calculateCircleArea() {
+            var radius = parseFloat(document.getElementById("circleRadius").value);
+            var area = Math.PI * radius * radius;
+            document.getElementById("circleArea").innerHTML = "Area of Circle: " + area.toFixed(2);
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(95, 50, radius, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+
+        function calculateRectangleArea() {
+            var length = parseFloat(document.getElementById("rectangleLength").value);
+            var width = parseFloat(document.getElementById("rectangleWidth").value);
+            var area = length * width;
+            document.getElementById("rectangleArea").innerHTML = "Area of Rectangle: " + area.toFixed(2);
+        }
+
+        function calculateSquareArea() {
+            var side = parseFloat(document.getElementById("squareSide").value);
+            var area = side * side;
+            document.getElementById("squareArea").innerHTML = "Area of Square: " + area.toFixed(2);
+        }
+
+        function calculateSimpleInterest() {
+            var principal = parseFloat(document.getElementById("principal").value);
+            var rate = parseFloat(document.getElementById("rate").value);
+            var time = parseFloat(document.getElementById("time").value);
+            var interest = (principal * rate * time) / 100;
+            document.getElementById("simpleInterest").innerHTML = "Simple Interest: " + interest.toFixed(2);
+        }
+    </script>
+    <style>
+        .input-group-addon i {
+            width: 20px;
+        }
+        .inputGroupContainer .input-group {
+            width: 100%;
+        }
+        .login-dark {
+            height: 1000px;
+            background-color: #000;
+            background-size: cover;
+            position: relative;
+        }
+
+        .login-dark form {
+            width: 90%;
+            background-color: #1e2833;
+            padding: 40px;
+            border-radius: 4px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-dark .illustration {
+            text-align: center;
+            padding: 15px 0 20px;
+            font-size: 100px;
+            color: #2980ef;
+        }
+
+        .login-dark form .form-control {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #434a52;
+            border-radius: 0;
+            box-shadow: none;
+            outline: none;
+            color: inherit;
+        }
+
+        .login-dark form .btn-primary {
+            background: #214a80;
+            border: none;
+            border-radius: 4px;
+            padding: 11px;
+            box-shadow: none;
+            margin-top: 26px;
+            text-shadow: none;
+            outline: none;
+        }
+
+        .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+            background: #214a80;
+            outline: none;
+        }
+
+        .login-dark form .forgot {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #6f7a85;
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        .login-dark form .forgot:hover, .login-dark form .forgot:active {
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        .login-dark form .btn-primary:active {
+            transform: translateY(1px);
+        }
+        
+        .selectpicker {
+            color: #1e2833;
+        }
+    </style>
+</head>
+<body class="login-dark">
+    <br>
+    
+    <div class="container" style="background-color: rgb(2, 2, 52); color: aliceblue; border-radius: 20px;">
+        <br>
+     <h1>Area and Interest Calculator</h1>
+
+        <h2>Circle</h2>
+        <label for="circleRadius">Radius:</label>
+        <input type="number" id="circleRadius">
+        <button onclick="calculateCircleArea()">Calculate</button>
+        <p id="circleArea"></p>
+
+        <h2>Rectangle</h2>
+        <label for="rectangleLength">Length:</label>
+        <input type="number" id="rectangleLength">
+        <label for="rectangleWidth">Width:</label>
+        <input type="number" id="rectangleWidth">
+        <button onclick="calculateRectangleArea()">Calculate</button>
+        <p id="rectangleArea"></p>
+
+        <h2>Square</h2>
+        <label for="squareSide">Side:</label>
+        <input type="number" id="squareSide">
+        <button onclick="calculateSquareArea()">Calculate</button>
+        <p id="squareArea"></p>
+
+        <h2>Simple Interest</h2>
+        <label for="principal">Principal:</label>
+        <input type="number" id="principal">
+        <label for="rate">Rate:</label>
+        <input type="number" id="rate">
+        <label for="time">Time:</label>
+        <input type="number" id="time">
+        <button onclick="calculateSimpleInterest()">Calculate</button>
+        <p id="simpleInterest"></p>
+        <br>
+    </div>    
+</body>
+</html>
