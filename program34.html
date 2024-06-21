@@ -1,0 +1,55 @@
+<!--date 18 june 2024 java script table for star pattern printing
+
+homework : write a program to check if the number is prime of not 
+            print 1
+                  12
+                  123
+           
+           check whether the leap year or not 
+            convert celcius to farenite       -->
+<!-- notes of javascript -->
+  <!--var = it is a global variable
+let= local variable
+const= constant-->
+<!-- var = variable - variable is a container which stores value
+ variable is a name given to memory location 
+ variable is loosely typed in javascript i.e datatype of variable is not defined
+ variable can be declared using const,var,auto
+ the var keyword use used in all javascript code from 1995 to 2015
+ the let and const keywords were added to javascript in 2015.
+ the var keyword should only be used in code written for older browsers. -->
+ <!-- naming convention rule
+  1. Names can contain letters, digits,underscores, and dollar signs.
+  2. Names must begin with a letter.
+  3. Names are case sensitive (y and Y are different variables).
+  4. Names are also begin with $ and _ (but we will not use it in this tutorial).
+  5. Reserved words (like JavaScript keywords) cannot be used as names. -->
+  <!-- the assignment operator 
+   in javascript, the equal sign(=) is an "assignment" operaton, not an "equal to" operator -->
+<!DOCTYPE html>
+ <html>
+ <head>
+     <title>For Loop Example</title>
+     <script>
+         function printNumbers() {
+             var counter2 ;
+             var rows = parseInt(document.getElementById("input1").value) ; 
+             var counter ;
+             for (var counter = 0; counter < rows; counter++) {
+                for ( counter2 = 0; counter2 <= counter ; counter2++) {
+                    document.write("*");
+                    
+                }    
+                document.write("<br>") ; 
+             }
+             
+         }
+     </script>
+ </head>
+ <body>
+     <h1>For Loop Example</h1>
+     <input type="number" id="input1">
+     <button onclick="printNumbers()">Print Numbers</button>
+     <p id="output"></p>
+ </body>
+ </html>

@@ -1,0 +1,27 @@
+<!--date 18 june 2024 java script  -->
+
+<!-- for loop
+ for(a=10;a<100;a++) 
+ a=10->initialization 
+ a<100 -> exit condition
+ a++or a-- -> increment and decrement-->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>For Loop Example</title>
+     <script>
+         function printNumbers() {
+             var output = "";
+             for (var a = 10; a < 100; a++) {
+                 output += a + " ";
+             }
+             document.getElementById("output").innerHTML = output;
+         }
+     </script>
+ </head>
+ <body>
+     <h1>For Loop Example</h1>
+     <button onclick="printNumbers()">Print Numbers</button>
+     <p id="output"></p>
+ </body>
+ </html>
